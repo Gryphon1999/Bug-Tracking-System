@@ -2,6 +2,7 @@
 Setup Migration: 
 This project uses Entity Framework Core for database migrations. You can migrate the database using the console by running the following command:
 dotnet ef database update or update-database
+For Database: MySql is used
 
 Project Setup:
 Set both the API and Web projects as startup projects in your solution.
