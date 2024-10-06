@@ -15,11 +15,9 @@ public class BugReportService : IBugReportService
 {
     private readonly AppDbContext _context;
     private readonly SieveProcessor _sieveProcessor;
-    private readonly IWebHostEnvironment _environment;
-    public BugReportService(AppDbContext context, IWebHostEnvironment environment, SieveProcessor sieveProcessor)
+    public BugReportService(AppDbContext context, SieveProcessor sieveProcessor)
     {
         _context = context;
-        _environment = environment;
         _sieveProcessor = sieveProcessor;
     }
 
@@ -110,7 +108,7 @@ public class BugReportService : IBugReportService
                 ReproductionSteps = x.ReproductionSteps,
                 UserId = x.UserId,
                 UserName = x.User.Name,
-            }).OrderBy(x=>x.BugNo);
+            }).OrderBy(x => x.BugNo);
             return PagedListResult<BugReportDto>.Create(dtoCollection, parameters.PageNumber, parameters.PageSize);
         }
         catch (Exception ex)
