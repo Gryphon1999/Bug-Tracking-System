@@ -1,0 +1,61 @@
+﻿@model BugTracker.Shared.Dtos.BugReportCreateUpdateDto
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create" enctype="multipart/form-data" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Title" class="control-label"></label>
+                <input asp-for="Title" class="form-control" />
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Severity" class="control-label"></label>
+                <select asp-for="Severity" asp-items="Html.GetEnumSelectList<BugTracker.Shared.Enums.BugSeverity>()" class="form-control"></select>
+                <span asp-validation-for="Severity" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Status" class="control-label"></label>
+                <select asp-for="Status" asp-items="Html.GetEnumSelectList<BugTracker.Shared.Enums.BugStatus>()" class="form-control"></select>
+                <span asp-validation-for="Status" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ReproductionSteps" class="control-label"></label>
+                <input asp-for="ReproductionSteps" class="form-control" />
+                <span asp-validation-for="ReproductionSteps" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Assignee</label>
+                <select asp-for="UserId" class="form-control" asp-items="ViewBag.Users">
+                    <option value="">Choose Assignee</option>
+                </select>
+                <span asp-validation-for="UserId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Attachments" class="control-label"></label>
+                <input asp-for="Attachments" class="form-control" type="file" multiple name="Attachments" />
+                <span asp-validation-for="Attachments" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
