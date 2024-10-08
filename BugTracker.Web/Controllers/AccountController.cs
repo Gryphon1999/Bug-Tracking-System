@@ -1,5 +1,6 @@
 ﻿using BugTracker.Shared.Helper;
 using BugTracker.Web.Helpers;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using System.Text;
@@ -92,6 +93,7 @@ public class AccountController : Controller
         }
     }
 
+    [Authorize]
     public IActionResult Logout()
     {
         HttpContext.Session.Clear();
