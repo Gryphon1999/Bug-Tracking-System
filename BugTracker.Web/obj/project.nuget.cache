@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "E7VFmzgOtPg=",
+  "dgSpecHash": "+5Wr3T31as8=",
   "success": true,
-  "projectFilePath": "D:\\Repo\\BugTracker\\BugTracker.Web\\BugTracker.Web.csproj",
+  "projectFilePath": "D:\\BugTracker\\BugTracker.Web\\BugTracker.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dell\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\dell\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

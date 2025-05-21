@@ -5664,11 +5664,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Repo\\BugTracker\\BugTracker.Web\\BugTracker.Web.csproj",
+      "projectUniqueName": "D:\\BugTracker\\BugTracker.Web\\BugTracker.Web.csproj",
       "projectName": "BugTracker.Web",
-      "projectPath": "D:\\Repo\\BugTracker\\BugTracker.Web\\BugTracker.Web.csproj",
+      "projectPath": "D:\\BugTracker\\BugTracker.Web\\BugTracker.Web.csproj",
       "packagesPath": "C:\\Users\\dell\\.nuget\\packages\\",
-      "outputPath": "D:\\Repo\\BugTracker\\BugTracker.Web\\obj\\",
+      "outputPath": "D:\\BugTracker\\BugTracker.Web\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5686,8 +5686,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Repo\\BugTracker\\BugTracker.Shared\\BugTracker.Shared.csproj": {
-              "projectPath": "D:\\Repo\\BugTracker\\BugTracker.Shared\\BugTracker.Shared.csproj"
+            "D:\\BugTracker\\BugTracker.Shared\\BugTracker.Shared.csproj": {
+              "projectPath": "D:\\BugTracker\\BugTracker.Shared\\BugTracker.Shared.csproj"
             }
           }
         }

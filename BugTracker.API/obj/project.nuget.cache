@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "23fT+LRLK0k=",
+  "dgSpecHash": "kyV6AD6Wv0k=",
   "success": true,
-  "projectFilePath": "D:\\Repo\\BugTracker\\BugTracker.API\\BugTracker.API.csproj",
+  "projectFilePath": "D:\\BugTracker\\BugTracker.API\\BugTracker.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dell\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\dell\\.nuget\\packages\\mapster\\7.4.0\\mapster.7.4.0.nupkg.sha512",
